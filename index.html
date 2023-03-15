@@ -5,106 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Abraham Studio - Barbería y estética masculina</title>
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Abraham Studio | Barbería y estética masculina</title>
     <meta
       name="title"
-      content="Abraham Studio - Barbería y estética masculina."
+      content="Abraham Studio | Barbería y estética masculina."
     />
     <meta
       name="description"
       content="Verte bien y sentirte cómodo en un espacio seguro, amigable y profesional."
     />
+    <!-- 
+    - favicon
+  -->
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./recursos/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik:wght@300,400;700&display=swap"
       rel="stylesheet"
-    />
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@200;400&display=swap"
-      rel="stylesheet"
-    />-->
-    <link rel="stylesheet" href="./recursos/css/flaticon.min.css" />
-    <link rel="preload" as="image" href="./recursos/imagenes/_DSC5646.jpg" />
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- 
+    - flaticon
+  -->
+    <link rel="stylesheet" href="assets/css/flaticon.min.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/_DSC5646.jpg" />
   </head>
+
   <body id="top">
-    <header>
-      <div class="header-top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+      <!-- <div class="header-top">
         <div class="container">
           <ul class="header-top-list">
             <li class="header-top-item">
               <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-              <p class="item-title">Teléfono:</p>
+
+              <p class="item-title">Contacto:</p>
+
               <a href="tel:01234567895" class="item-link">(+506) 8424-9981</a>
             </li>
+
             <li class="header-top-item">
               <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
               <p class="item-title">Horario de atención:</p>
-              <p class="item-text">Miércoles - Domingo, 08 am - 09 pm</p>
+
+              <p class="item-text">Miércoles a Domingo, 08 am - 09 pm</p>
             </li>
+
             <li>
               <ul class="social-list">
                 <li>
-                  <a href="#" target="_blank" class="social-link">
+                  <a href="#" class="social-link">
                     <ion-icon name="logo-instagram"></ion-icon>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" target="_blank" class="social-link">
+                  <a href="#" class="social-link">
                     <ion-icon name="logo-whatsapp"></ion-icon>
                   </a>
                 </li>
+
                 <li>
-                  <a href="#" target="_blank" class="social-link">
-                    <ion-icon name="location"></ion-icon>
+                  <a href="#" class="social-link">
+                    <iconify-icon icon="fa-brands:waze"></iconify-icon>
                   </a>
                 </li>
-                <li>
-                  <a href="#" target="_blank" class="social-link">
-                    <ion-icon name="map"></ion-icon>
-                  </a>
-                </li>
+
+
               </ul>
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
+
       <div class="header-bottom" data-header>
         <div class="container">
           <a href="#" class="logo">
             Abraham Studio
             <span class="span">Barbería</span>
           </a>
+
           <nav class="navbar container" data-navbar>
             <ul class="navbar-list">
               <li class="navbar-item">
                 <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
               </li>
+
               <li class="navbar-item">
                 <a href="#services" class="navbar-link" data-nav-link
                   >Servicios</a
                 >
               </li>
+
               <li class="navbar-item">
                 <a href="#pricing" class="navbar-link" data-nav-link>Precios</a>
               </li>
+
               <li class="navbar-item">
                 <a href="#gallery" class="navbar-link" data-nav-link>Galería</a>
               </li>
+
               <li class="navbar-item">
-                <a href="#appointment" class="navbar-link" data-nav-link
+                <a href="#agendar" class="navbar-link" data-nav-link
                   >Disponibilidad</a
                 >
               </li>
-              <li class="navbar-item">
-                <a href="#" class="navbar-link" data-nav-link>Contacto</a>
-              </li>
+
+              <!-- <li class="navbar-item">
+                <a href="#" class="navbar-link" data-nav-link>Contact</a>
+              </li> -->
             </ul>
           </nav>
+
           <button
             class="nav-toggle-btn"
             aria-label="toggle menu"
@@ -112,63 +149,85 @@
           >
             <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
           </button>
-          <a href="#" class="btn has-before cta">
+
+          <a href="#agendar" class="btn has-before">
             <span class="span">Agendar Cita</span>
+
             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
           </a>
         </div>
       </div>
     </header>
+
     <main>
       <article>
         <!-- 
         - #HERO
       -->
+
         <section
           class="section hero has-before has-bg-image"
           id="home"
           aria-label="home"
-          style="background-image: url('./recursos/imagenes/_DSC5646.jpg')"
+          style="background-image: url('./assets/images/_DSC5646.jpg')"
         >
           <div class="container">
-            <h1 class="h1 hero-title">Sentirte bien empieza con verte bien</h1>
+            <h1 class="h1 hero-title">Sentirte Bien Empieza Con Verte Bien</h1>
 
             <p class="hero-text">
-              En Abraham Studio encontrarás un ambiente amigable, libre de
-              prejuicios y con la mejor calidad de servicio para todos.
+              En <strong>Abraham Studio</strong>, encontrarás un ambiente
+              amigable, <strong>libre de prejuicios</strong> y con la mejor
+              calidad de servicio para todos.
             </p>
 
-            <a href="#" class="btn has-before">
-              <span class="span">Agenda tu cita</span>
+            <a href="#agendar" class="btn has-before">
+              <span class="span">Agendar una Cita</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
             </a>
           </div>
         </section>
+
         <!-- 
         - #SERVICE
       -->
-        <section class="section service" id="services" aria-label="services">
+
+        <section class="section service" aria-label="services">
           <div class="container">
-            <h2 class="h2 section-title text-center">Service We Provide</h2>
-            <p class="section-text text-center">
-              Sit amet consectetur adipiscing elit sed do eiusmod tempor
-              incididunt labore dolore magna aliqua suspendisse
+            <h2 id="empathy" class="h2 section-title text-center">
+              El cuidado personal es importante para ti.
+            </h2>
+
+            <p id="services" class="section-text text-center">
+              El descuido puede afectar tu apariencia, autoconfianza e
+              interacciones sociales. Te mereces sentirte en tu mejor momento
+              todos los días, y eso comienza con tu cabello.
             </p>
+            <a href="#agendar" class="btn has-before" id="cta2">
+              <span class="span">Agendar Cita</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+            <h2  class="h2 section-title text-center">
+              Tratamientos y cuidados:
+            </h2>
             <ul class="grid-list">
               <li>
                 <div class="service-card">
                   <div class="card-icon">
                     <i class="flaticon-salon"></i>
                   </div>
+
                   <h3 class="h3">
-                    <a href="#" class="card-title">Hair Cutting Style</a>
+                    <a href="#agendar" class="card-title">Corte de Cabello</a>
                   </h3>
+
                   <p class="card-text">
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Ya sea que busques un estilo clásico o algo audaz y moderno,
+                    crearemos un corte que refleje quién eres.
                   </p>
-                  <a href="#" class="card-btn" aria-label="more">
+
+                  <a href="#agendar" class="card-btn" aria-label="more">
                     <ion-icon
                       name="arrow-forward"
                       aria-hidden="true"
@@ -176,79 +235,48 @@
                   </a>
                 </div>
               </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <i class="flaticon-shampoo"></i>
-                  </div>
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Hair Washing</a>
-                  </h3>
-                  <p class="card-text">
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="#" class="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <i class="flaticon-hot-stone"></i>
-                  </div>
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Body Treatments</a>
-                  </h3>
-                  <p class="card-text">
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="#" class="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <i class="flaticon-treatment"></i>
-                  </div>
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Beauty & Spa</a>
-                  </h3>
-                  <p class="card-text">
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <a href="#" class="card-btn" aria-label="more">
-                    <ion-icon
-                      name="arrow-forward"
-                      aria-hidden="true"
-                    ></ion-icon>
-                  </a>
-                </div>
-              </li>
+
               <li>
                 <div class="service-card">
                   <div class="card-icon">
                     <i class="flaticon-shaving-razor"></i>
                   </div>
+
                   <h3 class="h3">
-                    <a href="#" class="card-title">Stylist Shaving</a>
+                    <a href="#agendar" class="card-title">Afeitado Estilizado</a>
                   </h3>
+
                   <p class="card-text">
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Contarás con los mejores productos y técnicas para evitar la
+                    irritación y cuidar la salud de tu piel.
                   </p>
-                  <a href="#" class="card-btn" aria-label="more">
+
+                  <a href="#agendar" class="card-btn" aria-label="more">
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="flaticon-shampoo"></i>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#agendar" class="card-title">Lavado del cabello</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Obtendrás recomendaciones personalizadas sobre qué tipo de
+                    shampoo y acondicionador usar según el tipo de cabello que
+                    tengas.
+                  </p>
+
+                  <a href="#agendar" class="card-btn" aria-label="more">
                     <ion-icon
                       name="arrow-forward"
                       aria-hidden="true"
@@ -261,14 +289,65 @@
                   <div class="card-icon">
                     <i class="flaticon-hair-dye"></i>
                   </div>
+
                   <h3 class="h3">
-                    <a href="#" class="card-title">Multi Hair Colors</a>
+                    <a href="#agendar" class="card-title">Tinte & Free Style</a>
                   </h3>
+
                   <p class="card-text">
-                    Sit amet consectetur adipisci elit sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    Desde un corte, un retoque o una transformación completa,
+                    contarás con la experiencia y la creatividad para hacer
+                    realidad tu visión.
                   </p>
-                  <a href="#" class="card-btn" aria-label="more">
+
+                  <a href="#agendar" class="card-btn" aria-label="more">
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="flaticon-beauty-treatment"></i>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#agendar" class="card-title">Mascarillas</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Mascarillas capilares para nutrir y reparar el cabello
+                    dañado y mascarillas faciales para piel grasa o para piel
+                    seca.
+                  </p>
+
+                  <a href="#agendar" class="card-btn" aria-label="more">
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <i class="flaticon-medal"></i>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#agendar" class="card-title">Asesoría y Educación</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Desde recomendaciones sobre como peinarte en casa y como
+                    evitar la caspa hasta productos para desarrollar barba.
+                  </p>
+
+                  <a href="#agendar" class="card-btn" aria-label="more">
                     <ion-icon
                       name="arrow-forward"
                       aria-hidden="true"
@@ -279,9 +358,890 @@
             </ul>
           </div>
         </section>
+
+        <!-- 
+        - #PLAN
+      -->
+        <!-- <section id="plan" class="icon-columns default-spacing">
+          <div class="wrapper">
+            <div class="icon-columns-wrapper">
+              <div class="icon-column icon-column--icon-top">
+                <div class="icon-column-icon">
+                  <img
+                    src="./images/icons/consultation.svg"
+                    alt="Consultoría de mercadeo"
+                  />
+                </div>
+                <div class="icon-column-info">
+                  <h3>Agenda una Consultoría Gratuita</h3>
+                  <h4></h4>
+                  <p>
+                    Analizaremos los objetivos actuales de tu negocio
+                    elaboraremos una estrategia acorde a las necesidades de tus
+                    clientes.
+                  </p>
+                </div>
+              </div>
+              <div class="icon-column icon-column--icon-top">
+                <div class="icon-column-icon">
+                  <img
+                    src="./images/icons/website.svg"
+                    alt="Lanzamiento de sitio web"
+                  />
+                </div>
+                <div class="icon-column-info">
+                  <h3>Recibes tu Sitio Web a tu medida</h3>
+                  <h4></h4>
+                  <p>
+                    Te entregaremos un Sitio Web que represente tu negocio de
+                    manera Profesional y auténtica.
+                  </p>
+                </div>
+              </div>
+              <div class="icon-column icon-column--icon-top">
+                <div class="icon-column-icon">
+                  <img
+                    src="./images/icons/growth.svg"
+                    alt="Resultados positivos"
+                  />
+                </div>
+                <div class="icon-column-info">
+                  <h3>Posiciónate en internet y crece tu negocio</h3>
+                  <h4></h4>
+                  <p>
+                    Con una sólida presencia en línea, podrás captar la atención
+                    de tus clientes ideales. Nosotros continuaremos a tu lado
+                    brindandote el soporte que necesites.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cta">
+              <a href="#agendar" class="btn3">Agendar Consultoría Gratuita</a>
+            </div>
+          </div>
+        </section> -->
+        <!-- 
+        - #PRICING
+      -->
+
+        <section
+          class="section pricing has-bg-image has-before"
+          id="pricing"
+          aria-label="pricing"
+          style="
+            background-image: url('./assets/images/fotor_2023-3-12_17_54_5.png');
+            background-position: top center;
+          "
+        >
+          <div class="container">
+            <h2 class="h2 section-title text-center">Precios</h2>
+
+            <p class="section-text text-center">
+              Recibirás un servicio profesional y sofisticado que te dejará
+              sintiéndote seguro, elegante y totalmente a tu estilo.
+            </p>
+
+            <div class="pricing-tab-container">
+              <ul class="tab-filter">
+                <li>
+                  <button class="filter-btn active" data-filter-btn="all">
+                    <div class="btn-icon">
+                      <i class="flaticon-beauty-salon" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Todos los precios</p>
+                  </button>
+                </li>
+
+                <li>
+                  <button class="filter-btn" data-filter-btn="beauty-spa">
+                    <div class="btn-icon">
+                      <i class="flaticon-salon" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Corte</p>
+                  </button>
+                </li>
+
+                <li>
+                  <button class="filter-btn" data-filter-btn="body-treatments">
+                    <div class="btn-icon">
+                      <i class="flaticon-razor-blade" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Barba</p>
+                  </button>
+                </li>
+
+                <li>
+                  <button class="filter-btn" data-filter-btn="face-washing">
+                    <div class="btn-icon">
+                      <i class="flaticon-barber" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Corte y Barba</p>
+                  </button>
+                </li>
+
+                <li>
+                  <button class="filter-btn" data-filter-btn="meditations">
+                    <div class="btn-icon">
+                      <i class="flaticon-hair-dye" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Tinte</p>
+                  </button>
+                </li>
+
+                <li>
+                  <button class="filter-btn" data-filter-btn="shaving">
+                    <div class="btn-icon">
+                      <i class="flaticon-spa" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="btn-text">Epilación</p>
+                  </button>
+                </li>
+              </ul>
+
+              <ul class="grid-list">
+                <li data-filter="beauty-spa">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/pricing-1.jpg"
+                        width="90"
+                        height="90"
+                        alt="Hair Cutting & Fitting"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Corte de cabello</h3>
+
+                      <p class="card-text">Duración estimada: 35-45 minutos</p>
+                    </div>
+
+                    <data class="card-price" value="89">₡10,000</data>
+                  </div>
+                </li>
+
+                <li data-filter="body-treatments">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/pricing-2.jpg"
+                        width="90"
+                        height="90"
+                        alt="Shaving & Facial"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Barba</h3>
+
+                      <p class="card-text">Duración estimada: 30 minutos</p>
+                    </div>
+
+                    <data class="card-price" value="45">₡8,000</data>
+                  </div>
+                </li>
+
+                <li data-filter="face-washing">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/fotor_2023-3-12_16_41_11 (1).jpg"
+                        width="90"
+                        height="90"
+                        alt="Hair Color & Wash"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Corte y Barba</h3>
+
+                      <p class="card-text">Duración estimada: 60 minutos</p>
+                    </div>
+
+                    <data class="card-price" value="35">₡15,000</data>
+                  </div>
+                </li>
+
+                <li data-filter="meditations">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/fotor_2023-3-12_17_24_56 (1).jpg"
+                        width="90"
+                        height="90"
+                        alt="Body Massage"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Tinte</h3>
+
+                      <p class="card-text">
+                        Duración estimada depende del proyecto
+                      </p>
+                    </div>
+
+                    <data class="card-price" value="56"><a href="https://api.whatsapp.com/send?phone=50684249981" target="_blank">Cotizar</a></data>
+                  </div>
+                </li>
+
+                <li data-filter="shaving">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/fotor_2023-3-12_17_28_11 (1).jpg"
+                        width="90"
+                        height="90"
+                        alt="Beauty & Spa"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Epilación</h3>
+
+                      <p class="card-text">Duración estimada: 30 minutos</p>
+                    </div>
+
+                    <data class="card-price" value="27">₡8,000</data>
+                  </div>
+                </li>
+
+                <!-- <li data-filter="face-washing">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/pricing-6.jpg"
+                        width="90"
+                        height="90"
+                        alt="Facial & Face Wash"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Facial & Face Wash</h3>
+
+                      <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="63">$63</data>
+                  </div>
+                </li>
+
+                <li data-filter="body-treatments">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/pricing-7.jpg"
+                        width="90"
+                        height="90"
+                        alt="Backbone Massage"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Backbone Massage</h3>
+
+                      <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="43">$43</data>
+                  </div>
+                </li>
+
+                <li data-filter="meditations">
+                  <div class="pricing-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 90; --height: 90"
+                    >
+                      <img
+                        src="./assets/images/pricing-8.jpg"
+                        width="90"
+                        height="90"
+                        alt="Meditation & Massage"
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div class="wrapper">
+                      <h3 class="h3 card-title">Meditation & Massage</h3>
+
+                      <p class="card-text">Clean & simple 30-40 minutes</p>
+                    </div>
+
+                    <data class="card-price" value="74">$74</data>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #GALLERY
+      -->
+
+        <section
+          class="section gallery"
+          id="gallery"
+          aria-label="photo gallery"
+        >
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <h2 class="h2 section-title">
+                  Forma parte de nuestra comunidad
+                </h2>
+
+                <p class="section-text">
+                  Ya sea que busques un corte rápido o una experiencia de
+                  cuidado completo, estoy aquí para ayudarte a lucir y sentirte
+                  en tu mejor momento.
+                </p>
+              </div>
+
+              <a href="#agendar" class="btn has-before">
+                <span class="span">Agenda tu cita</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div class="gallery-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 422; --height: 550"
+                  >
+                    <img
+                      src="./assets/images/_DSC5962.jpg"
+                      width="422"
+                      height="550"
+                      loading="lazy"
+                      alt="Hair Cutting"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <!-- <div class="card-content">
+                    <h3 class="h3 card-title">Hair Cutting</h3>
+
+                    <p class="card-text">Barbers & Salon Services</p>
+
+                    <a href="#" class="card-btn" aria-label="Read more">
+                      <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="gallery-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 422; --height: 550"
+                  >
+                    <img
+                      src="./assets/images/_DSC5739.jpg"
+                      width="422"
+                      height="550"
+                      loading="lazy"
+                      alt="Hair Cutting"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <!-- <div class="card-content">
+                    <h3 class="h3 card-title">Hair Cutting</h3>
+
+                    <p class="card-text">Barbers & Salon Services</p>
+
+                    <a href="#" class="card-btn" aria-label="Read more">
+                      <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="gallery-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 422; --height: 550"
+                  >
+                    <img
+                      src="./assets/images/_DSC5916.jpg"
+                      width="422"
+                      height="550"
+                      loading="lazy"
+                      alt="Hair Cutting"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <!-- <div class="card-content">
+                    <h3 class="h3 card-title">Hair Cutting</h3>
+
+                    <p class="card-text">Barbers & Salon Services</p>
+
+                    <a href="#" class="card-btn" aria-label="Read more">
+                      <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="gallery-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 422; --height: 550"
+                  >
+                    <img
+                      src="./assets/images/fotor_2023-3-12_18_31_1.jpg"
+                      width="422"
+                      height="550"
+                      loading="lazy"
+                      alt="Hair Cutting"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <!-- <div class="card-content">
+                    <h3 class="h3 card-title">Hair Cutting</h3>
+
+                    <p class="card-text">Barbers & Salon Services</p>
+
+                    <a href="#" class="card-btn" aria-label="Read more">
+                      <ion-icon
+                        name="arrow-forward"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a>
+                  </div> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #APPOINTMENT
+      -->
+        <section id="agendar" class="section">
+          <div class="wrapper">
+
+            <div
+              class="meetings-iframe-container"
+              data-src="https://meetings.hubspot.com/andres330?embed=true"
+            ></div>
+            <script
+              type="text/javascript"
+              src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+            ></script>
+            <!-- End of Meetings Embed Script -->
+            <div class="hide-promo"></div>
+            <!-- same-origin policy prevents from manipulating #document within the iframe -->
+          </div>
+          <style>
+            .date-picker-freemium-cta {
+              display: none;
+            }
+          </style>
+        </section>
+
+        <!-- <section
+          class="section appoin"
+          id="appointment"
+          aria-label="appointment"
+        >
+          <div class="container">
+            <div class="appoin-card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 250; --height: 774"
+              >
+                <img
+                  src="./assets/images/appoin-banner-1.jpg"
+                  width="250"
+                  height="774"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+
+              <div class="card-content">
+                <h2 class="h2 section-title">Make Appointment</h2>
+
+                <p class="section-text">
+                  Sit amet consectetur adipiscing elit sed do eiusmod tempor
+                  incididunt labore dolore magna aliqua suspendisse
+                </p>
+
+                <form action="" class="appoin-form">
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Full Name"
+                      required
+                      class="input-field"
+                    />
+
+                    <input
+                      type="email"
+                      name="email_address"
+                      placeholder="Email Address"
+                      required
+                      class="input-field"
+                    />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="Phone Number"
+                      required
+                      class="input-field"
+                    />
+
+                    <select name="category" class="input-field">
+                      <option value="Select category">Select category</option>
+                      <option value="Beauty & spa">Beauty & spa</option>
+                      <option value="Body massage">Body massage</option>
+                      <option value="Shaving & Facial">Shaving & Facial</option>
+                      <option value="Hair Color">Hair Color</option>
+                    </select>
+                  </div>
+
+                  <input
+                    type="date"
+                    name="date"
+                    required
+                    class="input-field date"
+                  />
+
+                  <textarea
+                    name="message"
+                    placeholder="Write Message"
+                    required
+                    class="input-field"
+                  ></textarea>
+
+                  <button type="submit" class="form-btn">
+                    <span class="span">Appointment Now</span>
+
+                    <ion-icon
+                      name="arrow-forward"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </button>
+                </form>
+              </div>
+
+              <figure
+                class="card-banner img-holder"
+                style="--width: 250; --height: 774"
+              >
+                <img
+                  src="./assets/images/appoin-banner-2.jpg"
+                  width="250"
+                  height="774"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+            </div>
+          </div>
+        </section> -->
       </article>
     </main>
-    <script src="./recursos/js/app.js"></script>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer has-bg-image"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="container">
+        <!-- <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              Barber
+              <span class="span">Hair Salon</span>
+            </a>
+
+            <form action="" class="input-wrapper">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Enter Your Email"
+                required
+                class="email-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe Now</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </div> -->
+
+          <div class="footer-link-box">
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Enlaces</p>
+              </li>
+
+              <li>
+                <a href="#services" class="footer-link has-before">Servicios</a>
+              </li>
+
+              <li>
+                <a href="#pricing" class="footer-link has-before">Precios</a>
+              </li>
+
+              <li>
+                <a href="#gallery" class="footer-link has-before">Galería</a>
+              </li>
+
+              <li>
+                <a href="#agendar" class="footer-link has-before">Disponibilidad</a>
+              </li>
+
+              <li>
+                <a href="https://api.whatsapp.com/send?phone=50684249981" target="_blank" class="footer-link has-before">Contacto</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Servicios</p>
+              </li>
+
+              <li>
+                <a href="" class="footer-link has-before">Corte</a>
+              </li>
+
+              <li>
+                <a href="" class="footer-link has-before">Barba</a>
+              </li>
+
+              <li>
+                <a href="" class="footer-link has-before">Corte y barba</a>
+              </li>
+
+              <li>
+                <a href="" class="footer-link has-before">Tinte</a>
+              </li>
+
+              <li>
+                <a href="" class="footer-link has-before">Epilación</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Noticias Recientes</p>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 70; --height: 75"
+                  >
+                    <img
+                      src="./assets/images/fotor_2023-3-13_16_16_21.png"
+                      width="70"
+                      height="75"
+                      loading="lazy"
+                      alt="The beginners guide to Henna Brows in Brisbane"
+                      class="img-cover"
+                      style="max-width: 75px;"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3>
+                      <a href="https://www.dailymotion.com/embed/video/x80ai4o?fbclid=PAAabCd3uPRaqwyZ6vD4Mb0aPbfXbNtxFRM8SoL7kuOcOgRhtzHxQ3PMYJAVs" target="_blank" class="card-title"
+                        >Cómo mantener una barba impecable: Buen día | Teletica.com</a
+                      >
+                    </h3>
+
+                    <div class="card-date">
+                      <ion-icon
+                        name="calendar-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+
+                      <time datetime="2022-08-25">25 Marzo 2021</time>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 70; --height: 75"
+                  >
+                    <img
+                      src="./assets/images/footer-blog-2.jpg"
+                      width="70"
+                      height="75"
+                      loading="lazy"
+                      alt="How do I get rid of unwanted hair on my face?"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3>
+                      <a href="#" class="card-title"
+                        >How do I get rid of unwanted hair on my face?</a
+                      >
+                    </h3>
+
+                    <div class="card-date">
+                      <ion-icon
+                        name="calendar-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+
+                      <time datetime="2022-08-25">25 August 2022</time>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Contacto</p>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                <address class="contact-link">
+                  <a 
+                  href="https://ul.waze.com/ul?preview_venue_id=180813923.1807942625.25880954&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" 
+                  target="_blank"
+                  class="contact-link"
+                  >San Rafael, Escazú (Waze)</a>
+                </address>
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                <a href="https://api.whatsapp.com/send?phone=50684249981" target="_blank" class="contact-link"
+                  >(+506) 8424-9981</a
+                >
+              </li>
+
+              <li class="footer-list-item">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                <span class="contact-link">Miércoles a Domingo, 08 am - 09 pm</span>
+              </li>
+
+              <!-- <li class="footer-list-item">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <a href="mailto:support@gmail.com" class="contact-link"
+                  >support@gmail.com</a
+                >
+              </li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2023 <a style="display: inline-block;" target="_blank" href="https://www.mainlydigitalworks.com/"
+            ><img style="max-height: 2.5rem; max-width: 2.5rem; transform: translateY(25%);" src="./assets/images/mainlydigital.png"
+          /></a>.
+            Todos los Derechos Reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -290,5 +1250,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
   </body>
 </html>
