@@ -34,12 +34,14 @@
   --white_50: hsla(0, 0%, 100%, 0.5);
   --white: hsl(0, 0%, 100%);
   --jet: hsl(0, 0%, 21%);
+  --gradiente_fondo: linear-gradient(90deg, rgba(138,137,137,1) 0%, rgba(54,54,54,1) 100%);
 
   /**
    * typography
    */
 
-  --ff-oswald: "Oswald", sans-serif;
+  /* --ff-oswald: "Oswald", sans-serif; */
+  --ff-oswald: "Bodoni MT", serif;
   --ff-poppins: "Poppins", sans-serif;
   --ff-lobster: "Lobster", cursive;
 
@@ -191,6 +193,7 @@ body {
 
 .section {
   padding-block: var(--section-padding);
+  background-color: #0e0b0b;
 }
 
 .has-before,
@@ -236,6 +239,7 @@ body {
 .h2,
 .h3 {
   color: var(--eerie-black-1);
+
 }
 
 .h2 {
@@ -281,6 +285,7 @@ body {
 .grid-list {
   display: grid;
   gap: 30px;
+  padding-top: 5rem;
 }
 
 .img-holder {
@@ -364,7 +369,15 @@ body {
 }
 
 .logo {
-  color: var(--indian-yellow);
+  /* color: var(--indian-yellow); */
+  /* background:  linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
+  background:  linear-gradient(to bottom, #462523 0, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
+  /* background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%);  */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
+  /* background-size: 200% 100%; */
   font-family: var(--ff-lobster);
   font-size: 2.7rem;
   font-weight: var(--fw-600);
@@ -463,6 +476,9 @@ section#home {
 .service {
   text-align: center;
 }
+.service h2, .service h3, .service p{
+  color: var(--platinum);
+}
 
 .service .section-text {
   margin-block: 15px 55px;
@@ -473,6 +489,7 @@ section#home {
 }
 .service-card {
   background-color: var(--white);
+  /* background: var(--gradiente_fondo); */
   padding: 60px 25px;
   box-shadow: var(--shadow-1);
   border-radius: var(--radius-8);
@@ -515,7 +532,36 @@ section#home {
   background-color: var(--indian-yellow);
   color: var(--white);
 }
-
+#carta-corte{
+  background-image: linear-gradient(rgba(31, 31, 31, 0.7),rgba(35, 35, 35, 0.7)),url(../images/_DSC5609.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#carta-barba{
+  background-image: linear-gradient(rgba(31, 31, 31, 0.7),rgba(35, 35, 35, 0.7)),url(../images/_DSC5642.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#carta-corte-y-barba{
+  background-image: linear-gradient(rgba(31, 31, 31, 0.7),rgba(35, 35, 35, 0.7)),url(../images/_DSC5935.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#carta-tinte{
+  background-image: linear-gradient(rgba(31, 31, 31, 0.7),rgba(35, 35, 35, 0.7)),url(../images/_DSC5732.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#carta-skincare{
+  background-image: linear-gradient(rgba(31, 31, 31, 0.7),rgba(35, 35, 35, 0.7)),url(../images/fotor_2023-3-22_16_31_17.png);
+  background-position: center;
+  background-size: cover;
+}
+#carta-medalla{
+  background-image: linear-gradient(rgba(31, 31, 31, 0.7),rgba(35, 35, 35, 0.7)),url(../images/_DSC6099.jpg);
+  background-position: center;
+  background-size: cover;
+}
 /*-----------------------------------*\
   #PRICING
 \*-----------------------------------*/
@@ -632,6 +678,9 @@ section#home {
 
 .title-wrapper {
   margin-block-end: 60px;
+}
+.gallery h2, .gallery p {
+  color: var(--platinum);
 }
 
 .gallery .section-text {
