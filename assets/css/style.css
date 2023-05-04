@@ -462,6 +462,9 @@ body {
 }
 section#home {
   text-shadow: 1px 1px 4px var(--eerie-black-1);
+  /* background-image: url("../images/fotor_2023-3-15_18_30_59.png"); */
+  background-image: url("../images/mobile-bg.png");
+  background-position: top;
 }
 .hero::before {
   inset: 0;
@@ -1093,6 +1096,15 @@ a.contact-link:is(:hover, :focus) {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
+
+@media (min-width: 450px) {
+  section#home {
+    text-shadow: 1px 1px 4px var(--eerie-black-1);
+    /* background-image: url("../images/fotor_2023-3-15_18_30_59.png"); */
+    background-image: url("../images/destktop-bg.png");
+    background-position: top;
+  }
+}
 
 /**
  * responsive for large than 575px screen
