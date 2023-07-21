@@ -47,7 +47,7 @@
   /* --ff-oswald: "Oswald", sans-serif; */
   --ff-oswald: "Bodoni MT", serif;
   --ff-poppins: "Poppins", sans-serif;
-  --ff-lobster: "Lobster", cursive;
+  --ff-cinzel: "Cinzel Decorative", cursive;
 
   --fs-40: 4rem;
   --fs-30: 3rem;
@@ -390,8 +390,9 @@ body {
   color: transparent;
   /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); */
   /* background-size: 200% 100%; */
-  font-family: var(--ff-lobster);
-  font-size: 2.7rem;
+  font-family: var(--ff-cinzel);
+  /* font-family: "Cinzel Decorative", cursive; */
+  font-size: 2rem;
   font-weight: var(--fw-600);
   /* text-transform: uppercase; */
   line-height: 1.4;
