@@ -772,6 +772,9 @@ section .hide-promo {
 /*-----------------------------------*\
   #APPOINTMENT
 \*-----------------------------------*/
+#visita-app{
+  padding-inline: 1px;
+}
 
 .appoin {
   padding-block-start: 0;
@@ -783,7 +786,7 @@ section .hide-promo {
 
 .appoin-card .card-content {
   background-color: var(--indian-yellow);
-  padding: 80px 15px;
+  padding: 40px 15px;
   text-align: center;
   color: var(--white);
 }
